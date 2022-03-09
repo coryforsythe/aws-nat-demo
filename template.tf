@@ -4,9 +4,11 @@ resource "aws_eip" "nat_gateway" {
 
 resource "aws_nat_gateway" "nat_gateway" {
   allocation_id = aws_eip.nat_gateway.id
-  subnet_id = aws_subnet.nat_gateway.id
+  subnet_id = var.public_subnet
   tags = {
-    "Name" = "DummyNatGateway"
+    "Name" = "DemoNatGateway"
+    "Owner" = "Derek Kitzelman"
+    "Purpose" = "TX Demos"
   }
 }
 
