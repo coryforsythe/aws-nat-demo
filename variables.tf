@@ -4,8 +4,14 @@ variable "vpc"{
   default = ""
 }
 
-variable "subnet"{
+variable "private_subnet"{
   type = string
-  description = "AWS subnet Id"
+  description = "AWS private subnet Id"
+  default = ""
+}
+
+variable "public_subnet"{
+  type = string
+  description = "AWS public subnet Id"
   default = ""
 }
