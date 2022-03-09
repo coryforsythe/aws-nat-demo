@@ -1,6 +1,6 @@
-variable "accountId" {}
-variable "accessKeyId" {}
-variable "secretKey" {}
+variable "account_id" {}
+variable "access_key" {}
+variable "secret_key" {}
 
 variable "vpc"{
   type = string
