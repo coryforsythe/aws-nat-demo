@@ -1,5 +1,5 @@
 provider "aws" {
-  account_id = "accountId"
-  access_key_id = "var.accessKeyId"
+  account_id = "var.accountId"
+  access_key = "var.accessKeyId"
   secret_key = "var.secretKey"
 }
